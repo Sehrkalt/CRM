@@ -1,0 +1,12 @@
+{% extends "user/user_base.html" %}
+
+{% block content %}
+    <h1>Справочник компаний</h1>
+    <ul>
+        {% for c in companies %}
+            <li>
+                {{ c.name }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

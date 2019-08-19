@@ -1,0 +1,12 @@
+{% extends "user/user_base.html" %}
+
+{% block content %}
+    <h1>Список доступных стран</h1>
+    <ul>
+        {% for c in countries %}
+            <li>
+                {{ c.name }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

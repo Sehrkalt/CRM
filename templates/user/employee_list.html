@@ -1,0 +1,12 @@
+{% extends "user/user_base.html" %}
+
+{% block content %}
+    <h1>Сотрудники</h1>
+    <ul>
+        {% for e in employees %}
+            <li>
+                {{ e.user_name }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

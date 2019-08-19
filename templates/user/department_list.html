@@ -1,0 +1,12 @@
+{% extends "user/user_base.html" %}
+
+{% block content %}
+    <h1>Список отделов</h1>
+    <ul>
+        {% for d in departments %}
+            <li>
+                {{ d.name }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
