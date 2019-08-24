@@ -22,14 +22,35 @@
         <div class="col-sm-2">
             {% block sidebar %}
                 <ul class="sidebar-nav">
+                    {% if user.is_authenticated %}
+                        <li>User: {{ user.get_username }}</li>
+                        <li><a href="{% url 'logout' %}?next={{ request.path }}">Logout</a></li>
+                    {% else %}
+                        <li><a href="{% url 'login' %}?next={{ request.path }}">Login</a></li>
+                    {% endif %}
                     <li><a href="{% url 'user_cabinet' %}">Панель управления</a></li>
+
+                    <li><a href="{% url 'product_list' %}">Товары</a></li>
+                    <li><a href="{% url 'remains_of_goods' %}">Остатки товаров</a></li>
+
                     <li><a href="{% url 'employee_list' %}">Сотрудники</a></li>
-                    <li><a href="{% url 'company_list' %}">Компании</a></li>
+                    <li><a href="{% url 'company_list' %}">Ваши компании</a></li>
                     <li><a href="{% url 'department_list' %}">Отделы</a></li>
+                    <li><a href="{% url 'position_list' %}">Должности</a></li>
+                    <li><a href="{% url 'project_list' %}">Проекты</a></li>
+                    <li><a href="{% url 'task_list' %}">Задачи</a></li>
 
                     <li><a href="{% url 'country_list' %}">Страны</a></li>
+                    <li><a href="{% url 'manufacturer_list' %}">Производители</a></li>
+                    <li><a href="{% url 'scope_list' %}">Сферы деятельности</a></li>
 
-                    <li><a href="{% url 'index' %}">На главную</a></li>
+                    <li><a href="{% url 'product_category_list' %}">Категории товаров</a></li>
+                    <li><a href="{% url 'deal_type_list' %}">Виды сделок</a></li>
+                    <li><a href="{% url 'contractor_list' %}">Контрагенты</a></li>
+
+                    <li><a href="{% url 'unit_list' %}">Единицы измерения</a></li>
+
+                    <li><a href="{% url 'index' %}">На страницу проекта</a></li>
 
                 </ul>
             {% endblock %}

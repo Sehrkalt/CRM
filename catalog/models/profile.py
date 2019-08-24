@@ -6,7 +6,7 @@ from django.dispatch import receiver
 
 class Profile(models.Model):
     user_name = models.OneToOneField(User, on_delete=models.CASCADE)
-    company = models.CharField(max_length=30, blank=True, verbose_name="Компания")
+    # company = models.CharField(max_length=30, blank=True, verbose_name="Компания")
     position = models.CharField(max_length=30, blank=True, verbose_name="Должность")
     phone = models.CharField(max_length=30, blank=True, verbose_name="Телефон")
     info = models.TextField(max_length=200, blank=True, verbose_name="Описание")

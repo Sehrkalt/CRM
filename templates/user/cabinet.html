@@ -1,8 +1,20 @@
 {% extends "user/user_base.html" %}
 
 {% block content %}
-<h1>Панель управления</h1>
+    <h1>Панель управления</h1>
 
+    <p>Добро пожаловать в систему управления CloudWork!</p>
+    <h2>Ваше рабочее пространство</h2>
+
+    <p>На данный момент запланировано:</p>
+    <ul>
+        <li>
+            <strong>Проектов: </strong>{{ projects_count }}
+        </li>
+        <li>
+            <strong>Задач: </strong>{{ tasks_count }}
+        </li>
+    </ul>
 
 
 {% endblock %}

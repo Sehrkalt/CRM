@@ -7,3 +7,6 @@ class Manufacturer(models.Model):
 
     def __str__(self):
         return '{0}, {1}'.format(self.name, self.country)
+
+    class Meta:
+        ordering = ["name"]

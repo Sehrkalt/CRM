@@ -1,11 +1,11 @@
 {% extends "user/user_base.html" %}
 
 {% block content %}
-    <h1>Список Ваших компаний</h1>
+    <h1>Список проектов компании</h1>
     <ul>
-        {% for c in companies %}
+        {% for p in projects %}
             <li>
-                {{ c.name }}
+                {{ p.name }}
             </li>
         {% endfor %}
     </ul>

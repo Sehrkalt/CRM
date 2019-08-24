@@ -1,7 +1,7 @@
 from django.db import models
 
 
-class Company(models.Model):
+class Contractor(models.Model):
     name = models.CharField(max_length=30, blank=False, verbose_name="Наименование")
     form_type = (
         ('Индивидуальный предприниматель', 'Индивидуальный предприниматель'),

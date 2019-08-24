@@ -1,0 +1,26 @@
+{% extends "user/user_base.html" %}
+
+{% block content %}
+    <h1>Остатки товаров</h1>
+    <table>
+        <tr>
+            <th>
+                Наименование
+            </th>
+            <th>
+                Количество
+            </th>
+        </tr>
+        {% for r in remains %}
+            <tr>
+                <th>
+                    {{ r.product }}
+                </th>
+                <th>
+                    {{ r.count }}
+                </th>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}
