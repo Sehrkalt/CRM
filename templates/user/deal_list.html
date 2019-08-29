@@ -1,11 +1,11 @@
 {% extends "user/user_base.html" %}
 
 {% block content %}
-    <h1>Список категорий товаров</h1>
+    <h1>Ваши сделки</h1>
     <ul>
-        {% for c in product_categories %}
+        {% for d in deals %}
             <li>
-                {{ c.name }}
+                {{ d.name }}
             </li>
         {% endfor %}
     </ul>

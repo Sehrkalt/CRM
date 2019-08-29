@@ -10,7 +10,7 @@ from catalog.models.department import Department
 from catalog.models.manufacturer import Manufacturer
 from catalog.models.position import Position
 from catalog.models.product import Product
-from catalog.models.product_category import ProductCategory
+from catalog.models.category import ProductCategory
 from catalog.models.profile import Profile
 from catalog.models.project import Project
 from catalog.models.remains_of_goods import RemainsOfGoods

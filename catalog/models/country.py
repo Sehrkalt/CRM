@@ -9,3 +9,11 @@ class Country(models.Model):
 
     class Meta:
         ordering = ["name"]
+
+
+    # def fill_list(self):
+    #     russia, created = Country.objects.get_or_create(name="Russia")
+    #     china, created = Country.objects.get_or_create(name="China")
+    #     usa, created = Country.objects.get_or_create(name="Usa")
+    #     japan, created = Country.objects.get_or_create(name="Japan")
+    #
