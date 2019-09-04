@@ -61,7 +61,7 @@ class DealTypeAdmin(admin.ModelAdmin):
 @admin.register(Department)
 class DepartmentAdmin(admin.ModelAdmin):
     model = Department
-    list_display = ('name', 'scope', )
+    list_display = ('name', 'description', )
 
 
 @admin.register(Manufacturer)
