@@ -56,7 +56,7 @@ ROOT_URLCONF = 'CRM.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['./templates',]
+        'DIRS': ['./home/projects/CRM/templates', './templates']
         ,
         'APP_DIRS': True,
         'OPTIONS': {
